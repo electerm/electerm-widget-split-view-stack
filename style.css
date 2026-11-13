@@ -1,0 +1,62 @@
+/* 1. the splitter stacks instead of sitting side by side */
+.term-sftp-box > .ant-splitter-horizontal {
+  flex-direction: column !important;
+}
+
+/* 2. panels become full-width halves (their flex-basis is px, set by JS) */
+.term-sftp-box > .ant-splitter-horizontal > .ant-splitter-panel {
+  flex: 1 1 0 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+/* 3. the gutter becomes a 1px rule; dragging is meaningless once sizes are pinned */
+.term-sftp-box > .ant-splitter-horizontal > .ant-splitter-bar {
+  flex: none !important;
+  width: 100% !important;
+  height: 1px !important;
+  background: var(--main-darker);
+}
+.term-sftp-box > .ant-splitter-horizontal > .ant-splitter-bar .ant-splitter-bar-dragger {
+  display: none !important;
+}
+
+/* 4. terminal fills its pane instead of the px box JS computed for a side-by-side split */
+.term-sftp-box > .ant-splitter-horizontal .terms-box,
+.term-sftp-box > .ant-splitter-horizontal .term-wrap {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* 5. same for the sftp pane - every wrapper in the chain must pass height down */
+.term-sftp-box > .ant-splitter-horizontal .sftp-wrap,
+.term-sftp-box > .ant-splitter-horizontal .sftp-section,
+.term-sftp-box > .ant-splitter-horizontal .sftp-section > .ant-spin-nested-loading,
+.term-sftp-box > .ant-splitter-horizontal .sftp-section > .ant-spin-nested-loading > .ant-spin-container {
+  height: 100% !important;
+}
+.term-sftp-box > .ant-splitter-horizontal .sftp-panel {
+  height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+.term-sftp-box > .ant-splitter-horizontal .sftp-panel > *:not(.file-list) {
+  flex: none !important;
+}
+.term-sftp-box > .ant-splitter-horizontal .file-list {
+  flex: 1 1 auto !important;
+  min-height: 0 !important;
+}
+.term-sftp-box > .ant-splitter-horizontal .sftp-table {
+  height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+.term-sftp-box > .ant-splitter-horizontal .sftp-table > *:not(.sftp-table-content) {
+  flex: none !important;
+}
+.term-sftp-box > .ant-splitter-horizontal .sftp-table-content {
+  flex: 1 1 auto !important;
+  height: auto !important;
+  min-height: 0 !important;
+}

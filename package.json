@@ -1,0 +1,29 @@
+{
+  "name": "split-view-stack",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Always stack the terminal above SFTP in split view, instead of only when the window is narrow.",
+  "main": "main.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "electerm": {
+    "id": "split-view-stack",
+    "name": "Stack Terminal Above SFTP",
+    "description": "Always stack the terminal above SFTP in split view, instead of only when the window is narrow.",
+    "version": "1.0.0",
+    "type": "instance",
+    "singleInstance": true,
+    "persist": true,
+    "configs": [
+      {
+        "name": "autoRun",
+        "label": "Apply on launch",
+        "type": "boolean",
+        "default": true,
+        "description": "Re-apply on every launch. This is the switch that puts the widget in electerm's auto-run list."
+      }
+    ]
+  }
+}
