@@ -5,6 +5,8 @@
   "description": "Always stack the terminal above SFTP in split view, instead of only when the window is narrow.",
   "main": "main.js",
   "license": "MIT",
+  "author": "ZHAO Xudong",
+  "homepage": "https://github.com/electerm/electerm-widget-split-view-stack",
   "scripts": {
     "test": "node --test test/*.test.js"
   },
