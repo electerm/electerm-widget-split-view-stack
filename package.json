@@ -1,9 +1,8 @@
 {
   "name": "split-view-stack",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "description": "Always stack the terminal above SFTP in split view, instead of only when the window is narrow.",
-  "main": "main.js",
   "license": "MIT",
   "author": "ZHAO Xudong",
   "homepage": "https://github.com/electerm/electerm-widget-split-view-stack",
@@ -14,10 +13,11 @@
     "id": "split-view-stack",
     "name": "Stack Terminal Above SFTP",
     "description": "Always stack the terminal above SFTP in split view, instead of only when the window is narrow.",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "type": "instance",
     "singleInstance": true,
     "persist": true,
+    "styles": ["style.css"],
     "configs": [
       {
         "name": "autoRun",
