@@ -6,8 +6,7 @@ Always stack the terminal above SFTP in split view, instead of only when the win
 
 One of the CSS patches from the electerm wiki page
 [Custom CSS examples](https://github.com/electerm/electerm/wiki/Custom-CSS-examples),
-packaged as a widget: install it, press **Start widget**, and the patch is on the
-window — and on every launch after that.
+packaged as a widget.
 
 | | |
 | --- | --- |
@@ -28,9 +27,7 @@ Or **Import folder** against a local clone.
 
 ## Use
 
-**Settings → Widgets → Stack Terminal Above SFTP** → **Start widget**. Leave *Apply on launch* on
-and it is re-applied at every start; **Stop** in *Running instances* takes it off
-again.
+Electerm applies the style on install. Leave *Apply on launch* enabled to restore it on subsequent launches. To remove the style, press **Stop** in *Running instances*.
 
 ## What it changes
 
